@@ -7,9 +7,9 @@ import (
 	"github.com/KBJ-ID/RedS/handlers"
 )
 
-/* Funcion Main*/
+/* Funcion Main sss*/
 func main() {
-	id bd.ChequeoConnection()==0{
+	if bd.ChequeoConnection() == 0 {
 		log.Fatal("Sin Conexión a la BD")
 		return
 	}
