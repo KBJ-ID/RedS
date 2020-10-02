@@ -16,7 +16,7 @@ func BuscoPerfil(ID string) (models.Usuario, error) {
 	defer cancel()
 
 	db := MongoCN.Database("twittor")
-	col := db.Collection("Usuarios")
+	col := db.Collection("usuarios")
 
 	var perfil models.Usuario
 	objID, _ := primitive.ObjectIDFromHex(ID)
